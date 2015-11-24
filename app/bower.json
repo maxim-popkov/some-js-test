@@ -1,0 +1,26 @@
+{
+  "name": "profile-manager",
+  "description": "",
+  "main": "main.js",
+  "authors": [
+    "maxim-popkov <maxim.popkov@outlook.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.2.3",
+    "handlebars": "~4.0.5",
+    "requirejs": "~2.1.22",
+    "jquery": "~2.1.4",
+    "require-handlebars-plugin": "~1.0.0"
+  }
+}

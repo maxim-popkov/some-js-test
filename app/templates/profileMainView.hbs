@@ -1,0 +1,12 @@
+<section>
+	{{#if profile}}
+    <div class="details details_hor-center">
+        <p class="details__elem">{{profile.firstName}}</p>
+        <p class="details__elem">{{profile.lastName}}</p>
+    </div>
+    {{else}}
+    <div class="details details_hor-center">
+        <p class="details__elem">No Profile</p>
+    </div>
+    {{/if}}
+</section>

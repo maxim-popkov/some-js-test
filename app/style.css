@@ -1,0 +1,114 @@
+.page {
+    width: 510px;
+    height: 510px;
+    background: white;
+    margin: auto;
+    font-family: Arial;
+}
+
+.page__side {
+    width: 65px;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 315px; 
+    background-color: #999999;
+
+    font-size: 12px;
+    color: #E6E6E6;
+}
+
+.page__side_left {
+    float: left;    
+}
+
+.page__main {
+    background-color: #E6E6E6;
+    padding-top: 50px;
+    height: 315px;
+    margin: auto; 
+    color: black;
+    font-size: 30px;
+}
+
+.page__footer {
+    background-color: #E6E6E6;
+    margin-top: 35px;
+    height: 115px;
+    font-size: 12px;
+}
+
+.details {
+    margin: 0;
+    padding: 0;
+}
+
+.details_left {
+    text-align: left;
+}
+
+.details_hor-center {
+    text-align: center;
+}
+
+.details__elem {
+    margin-top: 2px;
+    list-style-type: none;
+}
+
+
+
+.profiles-list {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    list-style: none outside none;
+}
+
+.profiles-list__elem {
+    height: 115px;
+    width: 82px;
+    display: inline-block;
+}
+
+.profiles-elem__link {
+    height: 80px;
+    width: 100%;
+    padding-top: 35px;
+    display: inline-block;
+}
+
+.profiles-list__elem_selected {
+    height: 111px;
+    width: 78px;
+    border: solid;
+    border-width: 2px;
+    border-color: #999999;
+}
+
+.profiles-list__paginator {
+}
+
+.paginator {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+}
+
+.paginator__page-num {
+    font-weight: normal;
+}
+
+.paginator__arrow_style {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.paginator__left {
+    
+}
+
+.paginator__right {
+    
+}
