@@ -1,29 +1,30 @@
 define([
-  'backbone',
-  'router',
-  './models/profileCollection',
-], function(Backbone, Router, ProfileCollection){
-  var profiles = new ProfileCollection();
+    'router',
+    './models/profileCollection'
+], function (Router, ProfileCollection) {
+    "use strict";
 
-  /*fetch json data from server for app initialization*/
-  var preLoad = function(){
-    return new Promise(loadData);
-  };
+    var profiles = new ProfileCollection();
 
-  var initialize = function(){
-    Router.initialize(profiles);
-  };
+    function loadData(resolve) {
+        profiles.fetch({
+            success: function (profiles) {
+                resolve(profiles);
+            }
+        });
+    }
 
-  function loadData(resolve, reject){
-    profiles.fetch({
-        'success': function (profiles){
-            resolve(profiles);
-        }
-    });
-  }
+    /*fetch json data from server for app initialization*/
+    var preLoad = function () {
+        return new Promise(loadData);
+    };
 
-  return {
-    initialize: initialize,
-    preLoad: preLoad
-  };
+    var initialize = function () {
+        Router.initialize(profiles);
+    };
+
+    return {
+        initialize: initialize,
+        preLoad: preLoad
+    };
 });
